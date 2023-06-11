@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Scania Suite" parallel="tests" verbose="4">
+	<listeners>
+		<listener
+			class-name="com.scania.scaniaDevUIFramewok.listeners.TestAllureListener" />
+	</listeners>
+
+	<test name="Create Employee Tests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.scania.scaniaDevUIFramewok.tests.CreateEmployeeTests" />
+		</classes>
+	</test>
+
+</suite>
+
